@@ -27,4 +27,7 @@ However, there is an mistake about putting a large file in Git LFS. This makes c
 repository much more difficult as it requires Git plugins. Also, the free limit is only 1.0GB per month for download 
 usage. It means only 5 cloning of the original repository is possible. Therefore, the original repository is abandoned.
 
-
+### About Kronecker graph dataset
+These are artificial dataset used to model the social network. 
+See [wiki](https://en.wikipedia.org/wiki/Kronecker_graph) for detailed explanation. [There](https://github.com/snap-stanford/snap/tree/master/examples/krongen) is a generator in C++, which uses a 2 times 2 matrix as a base graph.
+The generated graph has 2^n nodes, as shown by the filename s24, s28 and s29. Also e15 means the number of edges is simply 15 times of the number of node. Maybe the generation process is run 15 times and the generated results are concatenated together.
