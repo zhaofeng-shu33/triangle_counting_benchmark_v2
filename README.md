@@ -28,9 +28,14 @@ repository much more difficult as it requires Git plugins. Also, the free limit 
 usage. It means only 5 cloning of the original repository is possible. Therefore, the original repository is abandoned.
 
 ### About Kronecker graph dataset
-These are artificial dataset used to model the social network. 
-See [wiki](https://en.wikipedia.org/wiki/Kronecker_graph) for detailed explanation. [There](https://github.com/snap-stanford/snap/tree/master/examples/krongen) is a generator in C++, which uses a 2 times 2 matrix as a base graph.
+Kronecker graph is artificial dataset used to model the social network. 
+See [wiki](https://en.wikipedia.org/wiki/Kronecker_graph) for detailed explanation. 
+
 The generated graph has 2^n nodes, as shown by the filename s24, s28 and s29. Also e15 means the number of edges is simply 15 times of the number of node. Maybe the generation process is run 15 times and the generated results are concatenated together.
 
-There is [another repository](http://github.com/graph500/graph500) which could generate kronecker graph using a 2 times 2 matrix. 
-There is no executable to generate the graph directly in the latest release. If you need one, you can download [2.1.4](https://github.com/graph500/graph500/tree/graph500-2.1.4) from the release page. The node id is saved in `int64_t`.
+* [snap](https://github.com/snap-stanford/snap/tree/master/examples/krongen) contains kron generator in C++, which uses a 2 times 2 matrix as a base graph.
+
+* [graph500](http://github.com/graph500/graph500) could also generate kronecker graph using a 2 times 2 matrix.
+There is no executable to generate the graph directly in the latest release. If you need one, you can download [2.1.4](https://github.com/graph500/graph500/tree/graph500-2.1.4) from the release page. The node id is saved in `int64_t` by default.
+
+* [kron_gen](https://github.com/wang-zhq/kron_generate) is a custom kron generator.
